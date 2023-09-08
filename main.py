@@ -118,7 +118,7 @@ def new_win():
     ball3 = canvas.create_oval(150, 350, 170, 330, fill='red')
 
     while True:
-        coordinates = canvas.coords(ball1, ball2, ball3)
+        coordinates = canvas.coords(ball1)
         print(coordinates)
         canvas.move(ball1, xVelocity, yVelocity)
         canvas.move(ball2, xVelocity, yVelocity)
